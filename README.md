@@ -1,18 +1,29 @@
 # Population structures and incipient speciation in comimetic _Heliconius_ butterflies
 
-This repository contains the main analysis scripts used to characterize
-population structure, demographic histories, and speciation histories of the
-comimetic butterflies _Heliconius melpomene_ and _H. erato_, together
-with their close relatives, which are incipient species with continued
-gene flow.
+This repository documents the analytical pipeline behind the paper, tentatively
+titled "Population histories and incipient speciation in mimetic butterflies",
+including scripts used to characterize population structure, demographic
+histories, and speciation histories of the comimetic butterflies _Heliconius
+melpomene_ and _H. erato_, together with their close relatives, which are
+incipient species with continued gene flow.
 
-The repository documents the analyses behind the paper. It is not a
-single push-button workflow. Instead, the scripts record the main commands,
-parameter choices, and custom analysis steps used in the study, with local paths
-replaced by placeholders.
+Analysis scripts are provided in `scripts/`, roughly following the order of the
+analyses in the paper.
 
-Sample metadata are provided in `metadata/`. Analysis scripts are provided in
-`scripts/`, roughly following the order of the analyses in the paper.
+We do not supply raw data or large derived genomic files here. They can be found
+at `<data_repository_or_accessions>`.
+
+Paths are written as placeholders, for example:
+
+```text
+<path/to/input.vcf.gz>
+<path/to/output_dir>
+<path/to/sample_list.txt>
+```
+
+To reuse a script, replace these placeholders with paths on your own machine or
+cluster, check that the sample names match your metadata, and run the script in
+the relevant software environment.
 
 ## Analysis overview
 
@@ -38,23 +49,6 @@ Sample metadata are provided in `metadata/`. Analysis scripts are provided in
 | `5.3_treemix` | Convert allele-frequency files and run TreeMix. |
 | `6.1_bpp` | Generate loci and run BPP topology, MSCM, MSCI, and final parameter-estimation analyses. |
 | `7.1_introgressed_haplotypes` | Impute genotypes, run SPrime, and score candidate introgressed haplotypes. |
-
-## Using the scripts
-
-We do not supply raw data or large derived genomic files here. They can be found
-at `<data_repository_or_accessions>`.
-
-Paths are written as placeholders, for example:
-
-```text
-<path/to/input.vcf.gz>
-<path/to/output_dir>
-<path/to/sample_list.txt>
-```
-
-To reuse a script, replace these placeholders with paths on your own machine or
-cluster, check that the sample names match your metadata, and run the script in
-the relevant software environment.
 
 ## Software
 
