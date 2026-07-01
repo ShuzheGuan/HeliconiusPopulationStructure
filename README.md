@@ -1,12 +1,12 @@
-# Population structures and incipient speciation in a pair of comimetic _Heliconius_ butterflies
+# Population structures and incipient speciation in comimetic _Heliconius_ butterflies
 
 This repository contains the main analysis scripts used to characterize
 population structure, demographic histories, and speciation histories of the
-comimetic butterflies _Heliconius melpomene_ and _Heliconius erato_, together
-with their close relatives, which represent incipient species with continued
+comimetic butterflies _Heliconius melpomene_ and _H. erato_, together
+with their close relatives, which are incipient species with continued
 gene flow.
 
-The repository is meant to document the analyses behind the paper. It is not a
+The repository documents the analyses behind the paper. It is not a
 single push-button workflow. Instead, the scripts record the main commands,
 parameter choices, and custom analysis steps used in the study, with local paths
 replaced by placeholders.
@@ -41,15 +41,8 @@ Sample metadata are provided in `metadata/`. Analysis scripts are provided in
 
 ## Using the scripts
 
-We do not supply raw data or large derived genomic files here. Raw reads,
-reference genomes, large BAM/VCF files, and other large analysis products should
-be obtained from the repositories or accessions listed in the manuscript
-(`<data_repository_or_accessions>`).
-
-The scripts assume that the needed input files are already present in your own
-working environment. This includes, depending on the step, raw reads, reference
-genomes, sample lists, indexed BAM files, VCF files, BED masks, annotations, and
-intermediate files from earlier steps.
+We do not supply raw data or large derived genomic files here. They can be found
+at `<data_repository_or_accessions>`.
 
 Paths are written as placeholders, for example:
 
@@ -62,10 +55,6 @@ Paths are written as placeholders, for example:
 To reuse a script, replace these placeholders with paths on your own machine or
 cluster, check that the sample names match your metadata, and run the script in
 the relevant software environment.
-
-The scripts are intentionally lean. They keep the functional commands and
-analysis parameters, but remove most local scheduling, temporary logging, and
-machine-specific details.
 
 ## Software
 
