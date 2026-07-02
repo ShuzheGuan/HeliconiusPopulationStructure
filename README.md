@@ -1,19 +1,18 @@
-# Population structures and incipient speciation in comimetic _Heliconius_ butterflies
+# Population structure and incipient speciation in comimetic _Heliconius_ butterflies
 
-This repository documents the analytical pipeline behind the paper, tentatively
-titled "Population histories and incipient speciation in mimetic butterflies",
-including scripts used to characterize population structure, demographic
-histories, and speciation histories of the comimetic butterflies _Heliconius
-melpomene_ and _H. erato_, together with their close relatives, which are
-incipient species with continued gene flow.
+This repository contains the main analysis scripts for the manuscript
+"Population histories and incipient speciation in mimetic butterflies." These
+scripts were used to characterize population structure, demographic histories,
+and speciation histories of the comimetic butterflies _Heliconius melpomene_ and
+_H. erato_, together with closely related incipient species that continue to
+exchange genes.
 
-Analysis scripts are provided in `scripts/`, roughly following the order of the
-analyses in the paper.
+Scripts are organized in `scripts/`, following the main order of analyses in the
+manuscript. File paths, directory names, and dataset labels are written as
+placeholders so that the same commands can be adapted to other datasets or study
+systems.
 
-We do not supply raw data or large derived genomic files here. They can be found
-at `<data_repository_or_accessions>`.
-
-Paths are written as placeholders, for example:
+To reuse the scripts, replace placeholders such as:
 
 ```text
 <path/to/input.vcf.gz>
@@ -21,9 +20,12 @@ Paths are written as placeholders, for example:
 <path/to/sample_list.txt>
 ```
 
-To reuse a script, replace these placeholders with paths on your own machine or
-cluster, check that the sample names match your metadata, and run the script in
-the relevant software environment.
+with paths to the corresponding files or directories, and check that sample
+names match the corresponding metadata files before running each step.
+
+Raw sequencing data and large derived genomic files are not stored in this
+repository. Data needed to reproduce the analyses will be available at
+`<data_repository_or_accessions>`.
 
 ## Analysis overview
 
