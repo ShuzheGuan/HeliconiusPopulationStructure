@@ -7,12 +7,22 @@ and speciation histories of the comimetic butterflies _Heliconius melpomene_ and
 _H. erato_, together with closely related incipient species that continue to
 exchange genes.
 
+<<<<<<< HEAD
 Scripts are organized in `scripts/`, following the main order of analyses in the
 manuscript. File paths, directory names, and dataset labels are written as
 placeholders so that the same commands can be adapted to other datasets or study
 systems.
 
 To reuse the scripts, replace placeholders such as:
+=======
+Analysis scripts are provided in `scripts/`, roughly following the order of the
+analyses in the paper, and raw data or derived genomic files can be found at
+`<data_repository_or_accessions>`.
+
+These scripts document the parameters used in the main analyses, with directory as place holders, 
+To reuse a script, replace these placeholders with the correct paths, check that the sample names match your metadata, and 
+run the script in the relevant software environment. Paths are written as placeholders, for example:
+>>>>>>> f241845357262242a3139fbbda70c78bf557dca9
 
 ```text
 <path/to/input.vcf.gz>
@@ -20,6 +30,7 @@ To reuse the scripts, replace placeholders such as:
 <path/to/sample_list.txt>
 ```
 
+<<<<<<< HEAD
 with paths to the corresponding files or directories, and check that sample
 names match the corresponding metadata files before running each step.
 
@@ -27,6 +38,8 @@ Raw sequencing data and large derived genomic files are not stored in this
 repository. Data needed to reproduce the analyses will be available at
 `<data_repository_or_accessions>`.
 
+=======
+>>>>>>> f241845357262242a3139fbbda70c78bf557dca9
 ## Analysis overview
 
 | Directory | Purpose |
