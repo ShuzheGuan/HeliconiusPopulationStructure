@@ -12,8 +12,8 @@ analyses in the paper, and raw data or derived genomic files can be found at
 `<data_repository_or_accessions>`.
 
 These scripts document the parameters used in the main analyses, with directory as place holders, 
-To reuse a script, replace these placeholders with the correct paths, check that the sample names match your metadata, and run the script in
-the relevant software environment. Paths are written as placeholders, for example:
+To reuse a script, replace these placeholders with the correct paths, check that the sample names match your metadata, and 
+run the script in the relevant software environment. Paths are written as placeholders, for example:
 
 ```text
 <path/to/input.vcf.gz>
