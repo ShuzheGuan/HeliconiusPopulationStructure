@@ -11,7 +11,7 @@ FILTERED_VCF="<path/to/output_miss10.vcf.gz>"
 IMPUTED_PREFIX="<path/to/output_miss10_impute_prefix>"
 GENETIC_MAP="<path/to/genetic_map.txt>"
 BEAGLE_JAR="<path/to/beagle.jar>"
-MAX_MISSING=0.1
+MAX_MISSING=0.05
 THREADS=32
 JAVA_MEM="95g"
 
